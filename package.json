@@ -1,0 +1,12 @@
+{
+  "name": "microblog",
+  "version": "1.4.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+  }
+}
