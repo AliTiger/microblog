@@ -1,12 +1,29 @@
 {
-  "name": "microblog",
-  "version": "1.4.1",
+  "name": "test",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
     "express": "*",
+    "connect":"*",
+    "cookie":"*",
+    "redis":"*",
+    "connect-redis":"*",
+    "mongoose":"*",
+    "lru-cache":"*",
     "ejs": "*",
+    "xml2js":"*",
+    "socket.io":"*",
+    "mysql":"*",
+    "dateformat":"*",
+    "winston":"*",
+    "crypto":"*",
+	"sprintf":"*",
+	"fibers" : "*",
+	"log4js" : "*",
+	"qrcode" : "*",
+	"seq":"*"
   }
 }
