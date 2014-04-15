@@ -28,16 +28,14 @@
   <div id="columnB">
 
     <h2>文章列表</h2>
+	<% if( articles ){%>
+		<ul>
+		<% articles.forEach(function( item ){%>
+		  <li> <%= item.title %> <a href="/boke/article/<%= item.title %>">More&#8230;</a></li>
+		<% });%>
 
-    <ul>
-      <li> Aliquam gravida massa eu arcu.Etiam odio rhoncus placerat mi, suscipit et, rhoncus ac, lacinia, nisl. <a href="#">More&#8230;</a></li>
-
-      <li>Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. Donec nulla est, laoreet quis, pellentesque in, congue in, dui. <a href="#">More&#8230;</a></li>
-
-      <li>Sed vestibulum blandit nisl. Quisque elementum convallis purus. Quisque pellentesque semper massa. <a href="#">More&#8230;</a></li>
-
-      <li>Suspendisse potenti. Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue sagittis ut, orci. <a href="#">More&#8230;</a></li>
-    </ul>
+		</ul>
+	<% }%>
 
   </div>
 

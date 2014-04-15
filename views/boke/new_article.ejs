@@ -4,24 +4,19 @@
 <div id="content">
   <div id="columnA">
 	<h2>Welcome to <b>李晓东的博客</b></h2>
-	<p></p>
-	<p></p>
-
-    <ul>
-      <li><strong>to Share</strong> - to copy, distribute and transmit the work</li>
-      <li><strong>to Remix</strong> - to adapt the work</li>
-    </ul>
-
-    <p>Under the following conditions:</p>
-
-    <ul>
-      <li><strong>Attribution</strong> - you must link back to <a href="http://www.cssMoban.com/"><strong>my site</strong></a> (the footer has already my link and that's fine.)</li>
-      <li><strong>Share Alike</strong> - if you alter, transform, or  build upon this work, you may distribute the resulting work only under  the same, similar or a compatible license.</li>
-    </ul>
-
-    <h2>other <b>Credits</b></h2>
-
-    <p>Suspendisse potenti. Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. Donec nulla est, laoreet quis, pellentesque in, congue in, dui. Nunc rhoncus placerat augue. Donec justo odio, eleifend varius, volutpat venenatis, sagittis ut, orci. Nullam et orci in erat viverra ornare. Nunc pellentesque. Sed vestibulum blandit nisl. Quisque elementum convallis purus. Quisque pellentesque semper massa.</p>
+	<div class="form">
+		<form id="form1" action="/boke/new_article" method="post">
+			<label for="title">标题</label>
+			<br>
+			<input type="text" id="title" name="title">
+			<br>
+			<label for="content">内容</label>
+			<br>
+			<textarea type="text" rows=5 id="content" name="content"></textarea>
+			<br>
+			<button type="submit" >发布</button>
+		</form>
+	</div>
 
   </div>
 

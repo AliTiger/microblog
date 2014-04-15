@@ -1,0 +1,30 @@
+<% include blog-header %>
+
+
+<div id="content">
+  <div id="columnA">
+	<h2>Welcome to <b>李晓东的博客</b></h2>
+	<p><%= article.title %></p>
+	<p><%= article.content%></p>
+
+  </div>
+
+  <div id="columnB">
+
+    <h2>文章列表</h2>
+	<% if( articles ){%>
+		<ul>
+		<% articles.forEach(function( item ){%>
+		  <li> <%= item.title %> <a href="/boke/article/<%= item.title %>">More&#8230;</a></li>
+		<% });%>
+
+		</ul>
+	<% }%>
+
+  </div>
+
+  <div style="clear: both;">&nbsp;</div>
+
+</div>
+
+<% include blog-footer %>
